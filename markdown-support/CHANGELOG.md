@@ -1,0 +1,128 @@
+# Changelog - markdown-support
+
+All notable changes to this plugin will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+- Nothing yet
+
+### Changed
+- Nothing yet
+
+### Deprecated
+- Nothing yet
+
+### Removed
+- Nothing yet
+
+### Fixed
+- Nothing yet
+
+### Security
+- Nothing yet
+
+## [2.2.1] - 2026-03-11
+
+### Fixed
+- show preview placeholder on initial empty textarea
+- replace hardcoded German preview text with English
+
+## [2.2.0] - 2026-03-06
+
+### Added
+- add compact mode for secondary textareas (#8)
+
+### Changed
+- Revert "chore: Release v2.2.0"
+- split markdown-editor.js monolith into ES modules
+- add esbuild infrastructure for module bundling
+
+## [2.1.0] - 2026-03-05
+
+### Added
+- add canned response support for Markdown editor (#7)
+- add image upload button to Markdown toolbar
+- add image paste and drag-and-drop upload support for Markdown editor
+
+### Changed
+- corrected version in plugin.php
+
+### Fixed
+- convert Markdown to HTML for outbound emails while preserving Markdown in DB (#5)
+- accept root-relative file.php URLs from upload response
+- use file[] array notation for osTicket upload compatibility
+- prevent osTicket "Unable to save draft" dialog on image upload errors
+
+## [2.0.2] - 2025-12-17
+
+### Changed
+- add @disregard annotation and return type for IDE compatibility and removed wrongly added zip
+
+## [2.0.1] - 2025-12-16
+
+### Changed
+- Fix repository URLs in README
+
+## [2.0.0] - 2025-12-16
+
+### Changed
+- Revert "chore: Release v2.0.0"
+- Add src/ directory to release includes
+- Extract service classes from MarkdownPlugin
+
+## [1.0.4] - 2025-11-15
+
+### Changed
+- Auto-sync from RTY-9618531788
+
+### Fixed
+- support format parameter from JSON API requests
+- Suppress harmless Redactor cleanup warnings in production
+
+## [1.0.3] - 2025-11-09
+
+### Fixed
+- Disable debug logging in production
+
+## [1.0.2] - 2025-11-09
+
+### Fixed
+- Resolve CI test failures
+
+## [1.0.1] - 2025-11-09
+
+### Changed
+- added zip files to .gitignore
+- Reset to v1.0.0 after deleting v1.0.1 and v1.0.2
+- Revert to v1.0.1 after deleting v1.0.2 release
+- remove server-side debug logging functionality
+- Revert version bump to 1.0.0 for automated release process
+
+### Fixed
+- Exclude dev dependencies from release ZIP
+- Use Composer autoload instead of direct Parsedown.php require
+- allow direct access to log-handler.php via htaccess
+- Implement robust jQuery dependency loading with active polling
+- Resolve jQuery dependency loading issue with defer attribute
+
+## [1.0.0] - 2025-11-06
+
+### Changed
+- Add FAQ page reference to README
+- Add GitHub Actions workflow for PHP testing
+- Reset CHANGELOG for fresh 1.0.0 release
+- Initial repository setup for Markdown Support Plugin
+
+### Fixed
+- Downgrade doctrine/instantiator to 1.x for PHP 7.4/8.0 support
+- Remove direct Parsedown require from test file
+- Downgrade to PHPUnit 9.x for PHP 7.4+ compatibility
+- Only run Composer/PHPUnit tests on PHP 8.1+
+
+[2.1.0]: https://github.com/markus-michalski/osticket-markdown-support/releases/tag/v2.1.0
+[2.2.0]: https://github.com/markus-michalski/osticket-markdown-support/releases/tag/v2.2.0
+[2.2.1]: https://github.com/markus-michalski/osticket-markdown-support/releases/tag/v2.2.1
